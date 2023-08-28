@@ -31,5 +31,5 @@ class MyClass01 {
     // instance methods
     // 인스턴스가 가져야하는 기능들
 
-
+    // 새로운 내용 작성
 }

@@ -12,6 +12,16 @@ public class C08super {
     }
 }
 
+class MySubClass081 extends MyClass08 {
+    @Override
+    void method() {
+        System.out.println("자식의 메소드!");
+        super.method();
+        
+        // super: 부모의 멤버에 접근할 때 사용하는 키워드
+    }
+}
+
 class MyClass08 {
     void method() {
         System.out.println("부모의 메소드!");

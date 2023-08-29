@@ -19,3 +19,11 @@ class MyClass02 {
 class MySubClass021 extends MyClass02 {
 
 }
+
+// MyClass02 : 상위 클래스, 부모 클래스, Super class
+// MySubClass021 : 하위 클래스, 자식 클래스, Sub class
+
+
+
+
+

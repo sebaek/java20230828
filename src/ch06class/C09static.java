@@ -22,7 +22,7 @@ class MyClass09 {
         System.out.println("model = " + model);
         
         // static member에서 instance member는 접근 불가능
-        System.out.println("name = " + name);
+//        System.out.println("name = " + name);
     }
 }
 

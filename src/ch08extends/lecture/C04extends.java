@@ -20,7 +20,7 @@ class MyClass04 {
 
 class MySubClass041 extends MyClass04 {
     private int age;
-    
+
     void method2() {
         System.out.println("MySubClass041.method2");
     }

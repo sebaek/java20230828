@@ -9,7 +9,12 @@ public class C02extends {
 }
 
 // 위 코드에 문법오류가 없도록 MyClass02를 작성
-
+class MyClass02 {
+    String name;
+    void method3() {
+        System.out.println("MyClass02.method3");
+    }
+}
 
 class MySubClass021 extends MyClass02 {
 

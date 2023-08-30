@@ -9,4 +9,8 @@ public class Phone {
         this.color = color;
         System.out.println("Phone.Phone");
     }
+
+    public Phone(String model) {
+        this.model = model;
+    }
 }

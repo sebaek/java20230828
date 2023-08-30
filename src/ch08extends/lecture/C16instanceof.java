@@ -23,9 +23,17 @@ public class C16instanceof {
         boolean res5 = ani2 instanceof Dog16;
         boolean res6 = ani2 instanceof Cat16;
 
+        System.out.println("res4 = " + res4);
+        System.out.println("res5 = " + res5);
+        System.out.println("res6 = " + res6);
+
         boolean res7 = ani3 instanceof Animal16;
         boolean res8 = ani3 instanceof Dog16;
         boolean res9 = ani3 instanceof Cat16;
+
+        System.out.println("res7 = " + res7);
+        System.out.println("res8 = " + res8);
+        System.out.println("res9 = " + res9);
     }
 }
 

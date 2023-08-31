@@ -22,6 +22,18 @@ public class C02interface {
     }
 }
 
+class MyClass022 implements MyInterface02 {
+    @Override
+    public void method1() {
+        System.out.println("MyClass022.method1");
+    }
+
+    @Override
+    public void method2() {
+        System.out.println("MyClass022.method2");
+    }
+}
+
 interface MyInterface02 {
     // 추상 메소드
     abstract public void method1();

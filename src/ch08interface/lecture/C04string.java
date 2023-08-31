@@ -15,7 +15,7 @@ public class C04string {
         Constable co = a;
         ConstantDesc cd = a;
 
-        
+
 
     }
 }

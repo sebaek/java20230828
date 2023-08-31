@@ -9,6 +9,8 @@ public class RemoteControlExample {
 
         // 346 Audio class 작성
         // 346 11~13 줄 추가
-        
+
+        rc = new Audio();
+        rc.turnOn();
     }
 }

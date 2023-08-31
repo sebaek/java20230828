@@ -15,6 +15,10 @@ public class C02interface {
         i3.method1();
         i3.method2();
 
+        MyInterface02 i4 = new MyClass022();
+        i4.method1();
+        i4.method2();
+
     }
 }
 

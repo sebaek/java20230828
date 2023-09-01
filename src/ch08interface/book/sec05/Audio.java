@@ -27,6 +27,7 @@ public class Audio implements RemoteControl {
     }
 
     private int memoryVolume;
+
     @Override
     public void setMute(boolean mute) {
         if (mute) {

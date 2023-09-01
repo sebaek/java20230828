@@ -16,7 +16,7 @@ public class RemoteControlExample {
         rc = new Audio();
 
         rc.turnOn();
-        rc.setVolume(5);
+        rc.setVolume(1000);
 
         rc.setMute(true);
         rc.setMute(false);

@@ -20,6 +20,8 @@ public class LambdaExample {
     }
 
     public static void action(Calculable calculable) {
-
+        int x = 10;
+        int y = 4;
+        calculable.calculate(x, y);
     }
 }

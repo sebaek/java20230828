@@ -1,4 +1,4 @@
-package ch16lambda.book.exercise.p06;
+package ch16lambda.book.exercise.p05;
 
 public class Button {
     @FunctionalInterface

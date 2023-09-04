@@ -7,8 +7,9 @@ public class Chatting {
     }
 
     void startChat(String chatId) {
-        String nickName = null;
-        nickName = chatId;
+//        String nickName = null;
+//        nickName = chatId;
+        final String nickName = chatId;
 
         Chat chat = new Chat() {
             @Override

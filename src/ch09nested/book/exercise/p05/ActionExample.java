@@ -11,7 +11,7 @@ public class ActionExample {
 
         action.work();
 
-        // lambda 
+        // lambda
         Action action2 = () -> System.out.println("복사를합니다.2");
         action2.work();
 

@@ -13,6 +13,9 @@ public class C03toString {
         System.out.println(car1.toString());
         System.out.println(car2.toString());
         System.out.println(car3.toString());
+
+        System.out.println(car1);
+        System.out.println(String.valueOf(car1));
     }
 }
 

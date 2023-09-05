@@ -22,7 +22,7 @@ public class C12string {
                 """;
         System.out.println(e.length());
 
-        
+
 
     }
 }

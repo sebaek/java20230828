@@ -96,7 +96,11 @@ public class C18regex {
         System.out.println("8".matches("\\w")); // true
 
         // 예제 자바 변수명 작성규칙
-        // : 숫자로 시작하면 안되고, 영문대소문자, _, $
-        System.out.println();
+        // : 숫자로 시작하면 안되고, 영문대소문자, _, $, 숫자
+        String pattern = "[a-zA-Z_$][a-zA-Z_$0-9]*";
+        System.out.println("pattern_1".matches(pattern)); // true
+        System.out.println("_".matches(pattern));
+        System.out.println("$".matches(pattern));
+        System.out.println("4".matches(pattern));
     }
 }

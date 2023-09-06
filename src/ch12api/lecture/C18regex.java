@@ -102,5 +102,21 @@ public class C18regex {
         System.out.println("_".matches(pattern));
         System.out.println("$".matches(pattern));
         System.out.println("4".matches(pattern));
+
+        // 전화번호 패턴
+        // 010-9999-9999
+        // 02-9999-9999
+        // 02-999-9999
+        // 01099999999
+        // 0212345678
+        // 021235678
+        //
+        String pattern2 = "\\d{2,3}-?\\d{3,4}-?\\d{4}";
+        System.out.println("010-9999-9999".matches(pattern2));
+        System.out.println("02-9999-9999".matches(pattern2));
+        System.out.println("02-999-9999".matches(pattern2));
+        System.out.println("01099999999".matches(pattern2));
+        System.out.println("0212345678".matches(pattern2));
+        System.out.println("021235678".matches(pattern2));
     }
 }

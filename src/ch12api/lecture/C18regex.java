@@ -148,7 +148,7 @@ public class C18regex {
         System.out.println("auefhdogsod".matches(".*(dog|cat).*"));
         System.out.println("832catlkd".matches(".*(dog|cat).*"));
 
-        
+
 
     }
 }

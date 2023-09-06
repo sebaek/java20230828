@@ -42,6 +42,15 @@ public class C24arrays {
         Arrays.sort(arr5);
         System.out.println(Arrays.equals(arr4, arr5));
 
+        // binary search : 이진 탐색
+        int[] arr6 = {5, 3, 1, 7, 9};
+        int i = Arrays.binarySearch(arr6, 3);
+        System.out.println(i);
 
+        Arrays.sort(arr6); // 1, 3, 5, 7, 9
+        int i1 = Arrays.binarySearch(arr6, 3);
+        System.out.println(i1);
+        int i2 = Arrays.binarySearch(arr6, 4);
+        System.out.println(i2);
     }
 }

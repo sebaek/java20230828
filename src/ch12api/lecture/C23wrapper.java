@@ -7,6 +7,6 @@ public class C23wrapper {
 
         System.out.println("Long.MAX_VALUE = " + Long.MAX_VALUE);
         System.out.println("Long.MIN_VALUE = " + Long.MIN_VALUE);
-        
+
     }
 }

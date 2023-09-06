@@ -27,5 +27,39 @@ public class C18regex {
         System.out.println("dooog".matches("do{1,3}g")); // true
         System.out.println("doog".matches("do{1,3}g")); // true
 
+        System.out.println("dodog".matches("do{1,3}g")); // false
+
+        // 그룹 : ()
+        System.out.println("dodog".matches("(do){1,3}g")); // true
+        System.out.println("dododog".matches("(do){1,3}g")); // true
+        System.out.println("dog".matches("(do){1,3}g")); // true
+
+        // 수량 :
+        System.out.println("dog".matches("do{1,}g")); // true
+        System.out.println("doog".matches("do{1,}g")); // true
+        System.out.println("dooog".matches("do{1,}g")); // true
+        System.out.println("doooog".matches("do{1,}g")); // true
+        System.out.println("dooooooog".matches("do{1,}g")); //true
+
+        // ? : 없거나 한번
+        System.out.println("dg".matches("do?g")); // true
+        System.out.println("dog".matches("do?g")); // true
+        System.out.println("doog".matches("do?g")); // false
+
+        // * : 0번 이상
+        System.out.println("dg".matches("do*g")); // true
+        System.out.println("dog".matches("do*g")); // true
+        System.out.println("doog".matches("do*g")); // true
+        System.out.println("dooog".matches("do*g")); // true
+        System.out.println("doooog".matches("do*g")); // true
+
+        // + : 1번 이상
+        System.out.println("dg".matches("do+g")); // false
+        System.out.println("dog".matches("do+g")); // true
+        System.out.println("doog".matches("do+g")); // true
+        System.out.println("dooog".matches("do+g")); // true
+        System.out.println("doooog".matches("do+g")); // true
+
+
     }
 }

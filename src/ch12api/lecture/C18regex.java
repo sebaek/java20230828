@@ -60,6 +60,30 @@ public class C18regex {
         System.out.println("dooog".matches("do+g")); // true
         System.out.println("doooog".matches("do+g")); // true
 
+        // 문자 분류 (Character classes)
+        System.out.println("dog".matches("d[oi]g")); // true
+        System.out.println("dig".matches("d[oi]g")); // true
+        System.out.println("dag".matches("d[io]g")); //false
+
+        System.out.println("dog".matches("d[^oi]g")); // false
+        System.out.println("dig".matches("d[^oi]g")); // false
+        System.out.println("dag".matches("d[^oi]g")); // true
+
+        System.out.println("dag".matches("d[a-z]g")); // true
+        System.out.println("dbg".matches("d[a-z]g")); // true
+        System.out.println("dcg".matches("d[a-z]g")); // true
+        System.out.println("dzg".matches("d[a-z]g")); // true
+
+        System.out.println("dag".matches("d[a-cx-z]g")); // true
+        System.out.println("dbg".matches("d[a-cx-z]g")); // true
+        System.out.println("dcg".matches("d[a-cx-z]g")); // true
+        System.out.println("ddg".matches("d[a-cx-z]g")); // false
+        System.out.println("deg".matches("d[a-cx-z]g")); // false
+        System.out.println("dfg".matches("d[a-cx-z]g")); // false
+        System.out.println("dxg".matches("d[a-cx-z]g")); // true
+        System.out.println("dyg".matches("d[a-cx-z]g")); // true
+        System.out.println("dzg".matches("d[a-cx-z]g")); // true
+
 
     }
 }

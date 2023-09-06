@@ -142,6 +142,12 @@ public class C18regex {
         System.out.println("john23google3.co2m".matches(pattern3));
         System.out.println("john23@google3co2m".matches(pattern3));
 
+        // or : |
+        System.out.println("auefhdogsod".matches(".*dog.*"));
+        System.out.println("832catlkd".matches(".*cat.*"));
+        System.out.println("auefhdogsod".matches(".*(dog|cat).*"));
+        System.out.println("832catlkd".matches(".*(dog|cat).*"));
+
         
 
     }

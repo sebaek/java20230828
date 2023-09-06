@@ -118,5 +118,31 @@ public class C18regex {
         System.out.println("01099999999".matches(pattern2));
         System.out.println("0212345678".matches(pattern2));
         System.out.println("021235678".matches(pattern2));
+
+        // 모든 문자 : .
+        System.out.println(" ".matches("."));
+        System.out.println("a".matches("."));
+        System.out.println("3".matches("."));
+        System.out.println("+".matches("."));
+        System.out.println(".".matches("."));
+
+        // . : \.
+        System.out.println(" ".matches("\\.")); // false
+        System.out.println("a".matches("\\.")); // false
+        System.out.println("3".matches("\\.")); // false
+        System.out.println("+".matches("\\.")); // false
+        System.out.println(".".matches("\\.")); // true
+
+        // 이메일 패턴
+        // 영문소문자,숫자가 여러개  @  영문소문자,숫자 여러개 . 영문소문자,숫자 여러개
+        // john23@google3.co2m
+        String pattern3 = "[a-z0-9]+@[a-z0-9]+\\.[a-z0-9]+";
+
+        System.out.println("john23@google3.co2m".matches(pattern3));
+        System.out.println("john23google3.co2m".matches(pattern3));
+        System.out.println("john23@google3co2m".matches(pattern3));
+
+        
+
     }
 }

@@ -85,5 +85,18 @@ public class C18regex {
         System.out.println("dzg".matches("d[a-cx-z]g")); // true
 
 
+        // 문자 분류 기호
+        System.out.println("0".matches("[0-9]")); // true
+        System.out.println("7".matches("[0-9]")); // true
+        System.out.println("0".matches("\\d")); // true
+        System.out.println("7".matches("\\d")); // true
+
+        System.out.println("a".matches("[a-zA-Z_0-9]")); // true
+        System.out.println("_".matches("\\w")); // true
+        System.out.println("8".matches("\\w")); // true
+
+        // 예제 자바 변수명 작성규칙
+        // : 숫자로 시작하면 안되고, 영문대소문자, _, $
+        System.out.println();
     }
 }

@@ -18,7 +18,7 @@ public class C06wildcard {
         MyClass06<? extends Animal> o7 = new MyClass06<Dog>();
         MyClass06<? extends Animal> o8 = new MyClass06<Cat>();
 //        MyClass06<? extends Animal> o9 = new MyClass06<Object>(); // x
-        Animal ani1 = o3.get(); // 안전
+        Animal ani1 = o3.get(); // 안전 (in)
 //        o3.set(new Dog());// 안전 하지 않음
 //        o6.set(new Cat());
 //        o7.set(new Dog());
@@ -27,14 +27,11 @@ public class C06wildcard {
         MyClass06<? super Animal> o4 = new MyClass06<Animal>();
         MyClass06<? super Animal> o5 = new MyClass06<Object>();
 //        MyClass06<? super Animal> o10 = new MyClass06<Dog>(); // x
-        o4.set(new Dog());
+//        Animal aa = o5.get(); // x
+        o4.set(new Dog()); // out
         o5.set(new Dog());
         o4.set(new Cat());
         o4.set(new Animal());
-
-        
-
-        
     }
 }
 

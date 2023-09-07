@@ -14,6 +14,7 @@ public class C03typeParameter {
 // K : key
 // E : element
 // S, U : 기타 등등
+// T1, T2 : 기타 등등
 
 // https://docs.oracle.com/javase/tutorial/java/generics/types.html
 

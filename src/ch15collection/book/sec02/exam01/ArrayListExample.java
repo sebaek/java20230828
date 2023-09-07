@@ -29,6 +29,17 @@ public class ArrayListExample {
         System.out.println();
         // 향상된 for
         // foreach
+        System.out.println("foreach 사용1");
+        list.forEach(e -> System.out.println(e.getSubject() + "\t" + e.getContent() + "\t" + e.getWriter()));
+
+        System.out.println();
+
+        System.out.println("foreach 사용2");
+        list.forEach(System.out::println);
+//        list.forEach(e -> System.out.println(e));
+//        list.forEach(e -> System.out.println(e.toString()));
+
+        System.out.println();
 
 
         // 0, 1, 2, 3, 4

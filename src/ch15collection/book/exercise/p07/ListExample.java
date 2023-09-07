@@ -10,5 +10,9 @@ public class ListExample {
         for (Board board : list) {
             System.out.println(board.getTitle() + "-" + board.getContent());
         }
+
+        boolean contains = list.contains(new Board("제목1", "내용1"));
+        System.out.println("contains = " + contains);
+
     }
 }

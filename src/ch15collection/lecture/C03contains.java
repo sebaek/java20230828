@@ -18,7 +18,7 @@ public class C03contains {
         list2.add(new MyClass03("강인"));
 
         boolean c2 = list2.contains(new MyClass03("흥민"));
-        System.out.println("c2 = " + c2); // false
+        System.out.println("c2 = " + c2); // false? true?
     }
 }
 

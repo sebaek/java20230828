@@ -15,5 +15,7 @@ class Solution1046Test {
         int result2 = o1.lastStoneWeight(new int[]{1});
         assertEquals(1, result2);
 
+        int result3 = o1.lastStoneWeight(new int[]{2, 2});
+        assertEquals(0, result3);
     }
 }

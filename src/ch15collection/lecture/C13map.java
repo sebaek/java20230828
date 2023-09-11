@@ -20,9 +20,15 @@ public class C13map {
         }
 
         // keySet
-
+        System.out.println("keySet사용해서 전체탐색");
+        Set<String> keys = map.keySet();
+        for (String key : keys) {
+            System.out.println(key + ":" + map.get(key));
+        }
 
         // forEach
+        System.out.println("forEach 메소드로 전체탐색");
+        map.forEach((key, value) -> System.out.println(key + ":" + value));
 
     }
 }

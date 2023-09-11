@@ -14,6 +14,6 @@ class Solution771Test {
 
         int j = o.numJewelsInStones("z", "ZZ");
         assertEquals(0, j);
-        
+
     }
 }

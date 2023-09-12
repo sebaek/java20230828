@@ -20,5 +20,11 @@ public class C10skip {
                 .sorted()
                 .skip(list.size() - 1)
                 .forEach(System.out::println);
+
+        System.out.println("가장 마지막 원소 출력");
+        list.stream()
+                .skip(list.size() - 1)
+                .sorted()
+                .forEach(System.out::println);
     }
 }

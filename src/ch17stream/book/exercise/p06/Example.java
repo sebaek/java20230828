@@ -27,10 +27,17 @@ public class Example {
 
         //
         System.out.println("가장 많은 나이 reduce로 구해서 출력");
-
+        Integer maxAge = list.stream()
+                .map(m -> m.getAge())
+                .reduce(Integer.MIN_VALUE, Math::max);
+        System.out.println("maxAge = " + maxAge);
         //
         System.out.println("가장 작은 나이 reduce로 구해서 출력");
-        
+        Integer minAge = list.stream()
+                .map(m -> m.getAge())
+                .reduce(Integer.MAX_VALUE, Math::min);
+
+        System.out.println("minAge = " + minAge);
 
 
     }

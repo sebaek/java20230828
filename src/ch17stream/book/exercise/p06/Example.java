@@ -10,8 +10,13 @@ public class Example {
                 new Member("감자바", 26)
         );
 
+        //
+        System.out.println("나이들만 출력");
         list.stream()
                 .map(m -> m.getAge())
                 .forEach(System.out::println);
+
+        //
+        System.out.println("나이들의 합 reduce로 구해서 출력");
     }
 }

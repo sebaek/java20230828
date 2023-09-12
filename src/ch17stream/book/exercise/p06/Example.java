@@ -18,5 +18,20 @@ public class Example {
 
         //
         System.out.println("나이들의 합 reduce로 구해서 출력");
+        // stream, map, reduce
+        // sout
+        Integer sum = list.stream()
+                .map(m -> m.getAge())
+                .reduce(0, Integer::sum);
+        System.out.println("sum = " + sum);
+
+        //
+        System.out.println("가장 많은 나이 reduce로 구해서 출력");
+
+        //
+        System.out.println("가장 작은 나이 reduce로 구해서 출력");
+        
+
+
     }
 }

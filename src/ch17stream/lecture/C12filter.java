@@ -18,6 +18,11 @@ public class C12filter {
                 .forEach(System.out::println);
 
         System.out.println("홀수 중 가장 큰 값 출력");
-        
+        list.stream()
+                .sorted((x, y) -> y - x)
+                .filter(i -> i % 2 == 1)
+                .limit(1)
+                .forEach(System.out::println);
+
     }
 }

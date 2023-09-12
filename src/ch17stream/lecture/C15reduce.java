@@ -25,6 +25,28 @@ public class C15reduce {
 //        apply(5, 1);
 //        apply(6, 3);
 
+        System.out.println("최대값 구하기");
+        Integer reduce2 = list.stream()
+                .reduce(Integer.MIN_VALUE, Math::max);
+        System.out.println("reduce2 = " + reduce2);
+
+        System.out.println("최소값 구하기");
+        Integer reduce3 = list.stream()
+                .reduce(Integer.MAX_VALUE, Math::min);
+        System.out.println("reduce3 = " + reduce3);
+
+        var list2 = List.of("ja", "va", " is ", "g", "ood");
+        System.out.println("for문으로 문자열 연결");
+        String res1 = "";
+        for (String e : list2) {
+            res1 += e;
+        }
+        System.out.println("res1 = " + res1);
+
+        System.out.println("stream으로 문자열 연결");
+        String reduce4 = list2.stream()
+                .reduce("", String::concat);
+        System.out.println("reduce4 = " + reduce4);
 
 
     }

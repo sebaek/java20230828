@@ -1,4 +1,4 @@
-package ch17stream.book.sec05.exercise.p05;
+package ch17stream.book.exercise.p05;
 
 import java.util.List;
 

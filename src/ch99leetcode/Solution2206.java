@@ -1,27 +1,18 @@
 package ch99leetcode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Arrays;
+
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.counting;
+import static java.util.stream.Collectors.groupingBy;
 
 public class Solution2206 {
     public boolean divideArray(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int num : nums) {
-            if (map.containsKey(num)) {
-                map.put(num, map.get(num) + 1);
-            } else {
-                map.put(num, 1);
-            }
-        }
-
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int value = entry.getValue();
-
-            if (value % 2 == 1) {
-                return false;
-            }
-        }
-
-        return true;
+        return Arrays.stream(nums)
+                .boxed()
+                .collect(groupingBy(identity(), counting()))
+                .values()
+                .stream()
+                .allMatch(e -> e % 2 == 0);
     }
 }

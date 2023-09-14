@@ -11,7 +11,7 @@ public class ExceptionHandlingExample2 {
             System.out.println("[마무리 실행]");
         }
     }
-    
+
     public static void main(String[] args) {
         System.out.println("프로그램 시작");
         printLength("ThisIsJava");

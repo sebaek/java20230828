@@ -1,4 +1,4 @@
-package ch11exceptioin.book.sec02.exam02.sec02.exam01;
+package ch11exceptioin.book.sec02.exam01;
 
 public class ExceptionHandlingExample2 {
     public static void printLength(String data) {

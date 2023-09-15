@@ -11,6 +11,7 @@ public class C17copy {
             InputStream is = new FileInputStream(src);
             OutputStream os = new FileOutputStream(des);
 
+            // 중간에 한글이 있어도....
             try (is;os;) {
                 byte[] buf = new byte[100];
                 int len = 0;

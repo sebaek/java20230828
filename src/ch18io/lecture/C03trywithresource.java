@@ -78,9 +78,9 @@ public class C03trywithresource {
 
     }
 
-    public void method6() throws IOException {
+    public void method6() throws Exception {
         // 안좋은 코드임...
-        
+
         FileOutputStream fos = new FileOutputStream("");
         FileInputStream fis = new FileInputStream("");
 

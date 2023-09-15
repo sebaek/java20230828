@@ -12,7 +12,7 @@ public class C14write {
             writer.write(chars);
             writer.write(chars, 0, 3);
             writer.write(chars, 4, 2);
-            
+
 
             writer.flush();
         } catch (IOException e) {

@@ -1,23 +1,20 @@
-package ch18io.lecture;
+package ch18io.book.sec02.exam02;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class C05write {
+public class WriteExample {
     public static void main(String[] args) {
-        String path = "C:/Temp/out2.txt";
+        try (OutputStream os = new FileOutputStream("C:/Temp/test2.db")) {
 
-        try (OutputStream os = new FileOutputStream(path)) {
-            byte[] b = new byte[100];
+            byte[] arr = {10, 20, 30};
 
-            os.write(b);
-            os.write(b);
+            os.write(arr);
 
             os.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

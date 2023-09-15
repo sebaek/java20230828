@@ -25,7 +25,7 @@ public class C03trywithresource {
 
     public void method2() {
 
-        // try-with-resource 문법
+        // try-with-resources 문법
         // 변수의 타입은 AutoCloseable이어야 함
         try (OutputStream os = new FileOutputStream("");) {
 
@@ -67,7 +67,7 @@ public class C03trywithresource {
 
                 fio.read();
                 fos.write(33);
-                
+
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -76,6 +76,19 @@ public class C03trywithresource {
         }
 
 
+    }
+
+    public void method6() throws IOException {
+        // 안좋은 코드임...
+        
+        FileOutputStream fos = new FileOutputStream("");
+        FileInputStream fis = new FileInputStream("");
+
+        fos.write(33);
+        fis.read();
+
+        fos.close();
+        fis.close();
     }
 }
 

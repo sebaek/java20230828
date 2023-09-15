@@ -16,9 +16,10 @@ public class C16copy {
                 int len = 0;
 
                 while ((len = reader.read(chars)) != -1) {
-                    for (int i= 0; i < len; i++) {
-                        System.out.print(chars[i]);
-                    }
+//                    for (int i= 0; i < len; i++) {
+//                        System.out.print(chars[i]);
+//                    }
+                    writer.write(chars, 0, len);
                 }
             }
 

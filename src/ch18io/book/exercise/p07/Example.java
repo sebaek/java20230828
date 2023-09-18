@@ -16,7 +16,7 @@ public class Example {
             BufferedReader br = new BufferedReader(fr);
 
             try (br; fr;) {
-                
+
                 int rowNumber = 0;
                 String rowData;
                 while (true) {

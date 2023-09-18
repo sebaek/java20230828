@@ -4,12 +4,14 @@ import java.awt.*;
 
 public class C05runnable {
     public static void main(String[] args) {
-        Runnable r1 = new MyRunnable();
-        Thread thread1 = new Thread(r1);
+//        Runnable r1 = new MyRunnable();
+//        Thread thread1 = new Thread(r1);
+        Thread thread1 = new Thread(new MyRunnable());
         thread1.start();
 
-        Runnable r2 = new YourRunnable();
-        Thread thread2 = new Thread(r2);
+//        Runnable r2 = new YourRunnable();
+//        Thread thread2 = new Thread(r2);
+        Thread thread2 = new Thread(new YourRunnable());
         thread2.start();
     }
 }

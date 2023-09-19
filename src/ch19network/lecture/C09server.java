@@ -46,19 +46,24 @@ public class C09server {
                                 }
                             }
                         } catch (Exception e) {
-                            e.printStackTrace();
+//                            e.printStackTrace();
+                            System.err.println(e.getMessage());
                         }
 
                     });
                     t.start();
                 } catch (Exception e) {
-                    e.printStackTrace();
+//                    e.printStackTrace();
+                    System.err.println(e.getMessage());
+
                 }
 
 
             }
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.err.println(e.getMessage());
+
         }
 
 

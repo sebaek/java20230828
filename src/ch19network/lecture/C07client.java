@@ -11,7 +11,6 @@ public class C07client {
         // server가 client에게 파일 보내기
 
         try {
-
             Socket socket = new Socket("172.30.1.81", 5000);
 
             InputStream is = socket.getInputStream();

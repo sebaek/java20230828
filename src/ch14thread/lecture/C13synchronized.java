@@ -1,6 +1,6 @@
 package ch14thread.lecture;
 
-public class C13syncronized {
+public class C13synchronized {
     public static void main(String[] args) throws InterruptedException {
         MyBox box = new MyBox(0);
         Thread t1 = new Thread(new Task(box));

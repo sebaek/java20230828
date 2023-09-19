@@ -24,6 +24,7 @@ public class C10client {
                     System.out.print("입력>");
                     String chat = scanner.nextLine();
                     bufferedWriter.write(chat);
+                    bufferedWriter.newLine();
                     bufferedWriter.flush();
 
                     if (chat.equals("bye")) {

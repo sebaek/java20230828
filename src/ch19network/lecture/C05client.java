@@ -28,6 +28,8 @@ public class C05client {
                     bos.write(bytes, 0, length);
                 }
 
+                bos.flush();
+
             }
 
         } catch (Exception e) {

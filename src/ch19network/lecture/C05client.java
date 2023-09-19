@@ -27,7 +27,7 @@ public class C05client {
                 while ((length = bis.read(bytes)) != -1) {
                     bos.write(bytes, 0, length);
                 }
-                
+
             }
 
         } catch (Exception e) {

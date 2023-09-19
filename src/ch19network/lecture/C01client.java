@@ -13,7 +13,7 @@ public class C01client {
             BufferedWriter bw = new BufferedWriter(writer);
 
             try (socket; writer; bw;) {
-                bw.write("안녕하세요!!!!");
+                bw.write("안녕하세요!!!!😀");
             }
 
         } catch (Exception e) {

@@ -29,6 +29,8 @@ public class C06server {
                 while ((length = bis.read(bytes)) != -1) {
                     bos.write(bytes, 0, length);
                 }
+
+                bos.flush();
                 System.out.println("파일 다 받았습니다.");
 
             }

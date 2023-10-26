@@ -99,6 +99,46 @@ git branch 브랜치명 커밋번호
 '브랜치명'라는
 별칭 생성
 
+git switch 
+브랜치 옮기기
+
+git add
+변경사항을
+stage에 올리기
+
+git add .
+모든 파일
+stage로 올리기
+
+git restore --staged
+unstage 하기
+
+.gitignore 파일
+파일을 untracked로 유지
+이미 untracked 파일만
+
+git commit -am
+tracked 파일
+add, commit 함께
+
+git log --graph 
+그림으로 표현
+
+git merge 브랜치명
+브랜치명의 변경사항을
+현재 브랜치에 반영
+
+git branch -d 브랜치명
+브랜치 지우기
+
+git switch -c 브랜치명
+브랜치를 만들고 이동
+
+
+
+
+
+
 
 
 

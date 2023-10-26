@@ -23,6 +23,9 @@ cd
 cd ..
 상위폴더로
 
+cd -
+직전폴더로
+
 mkdir
 폴더만들기
 
@@ -48,6 +51,59 @@ cat (more, less)
 
 ctrl + c
 실행취소
+
+
+git init
+현재폴더를
+git이 관리하는 폴더로
+만들기
+
+git status
+현재 리포의
+상태보기
+
+git add
+변경된 파일을
+스테이지로
+
+git commit
+변경사항 생성
+
+git log
+변경사항
+히스토리 보기
+
+git log --oneline
+변경사항을
+한줄로 보기
+
+git checkout
+변경사항 옮기기
+
+
+git log --all
+모든 커밋 보기
+
+git log --all --oneline
+모든 커밋
+한줄 보기
+
+HEAD 현재커밋위치
+
+
+branch 
+커밋의 별칭
+
+git branch 브랜치명 커밋번호
+커밋번호에
+'브랜치명'라는
+별칭 생성
+
+
+
+
+
+
 
 
 
